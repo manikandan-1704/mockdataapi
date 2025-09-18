@@ -7,10 +7,12 @@ app.use(express.json());
 
 const userRoutes = require('./routes/users');
 const roleRoutes = require('./routes/roles');
+const todoRoutes = require('./routes/todos');
 
 // Routes
 app.use('/roles', roleRoutes);
 app.use('/users', userRoutes);
+app.use('/todos', todoRoutes);
 
 // Basic route
 app.get('/', (req, res) => {
