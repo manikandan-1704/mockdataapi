@@ -1,3 +1,7 @@
+require('dotenv').config();
+
+const BASE_IMG = process.env.PROFILE_IMG_BASE_URL;
+
 module.exports = [
   {
     id: 1,
@@ -6,6 +10,8 @@ module.exports = [
     email: "Sincere@april.biz",
     roleId: 1,
     status: "active",
+    password:"$2a$10$9yTzL3UoZbG/n8Z7uFjDru6/Pv1hlDpDdRJ4X2FlWc5JvIQnQkK1C",
+    image:`${BASE_IMG}1`,
     address: {
       street: "Kulas Light",
       suite: "Apt. 556",
@@ -24,6 +30,8 @@ module.exports = [
     email: "Shanna@melissa.tv",
     roleId: 2,
     status: "inactive",
+    password:"$2a$10$9yTzL3UoZbG/n8Z7uFjDru6/Pv1hlDpDdRJ4X2FlWc5JvIQnQkK1C",
+    image:`${BASE_IMG}1`,
     address: {
       street: "Victor Plains",
       suite: "Suite 879",
@@ -42,6 +50,8 @@ module.exports = [
     email: "Nathan@yesenia.net",
     roleId: 3,
     status: "active",
+    password:"$2a$10$9yTzL3UoZbG/n8Z7uFjDru6/Pv1hlDpDdRJ4X2FlWc5JvIQnQkK1C",
+    image:`${BASE_IMG}1`,
     address: {
       street: "Douglas Extension",
       suite: "Suite 847",
@@ -60,6 +70,8 @@ module.exports = [
     email: "Julianne.OConner@kory.org",
     roleId: 2,
     status: "active",
+    password:"$2a$10$9yTzL3UoZbG/n8Z7uFjDru6/Pv1hlDpDdRJ4X2FlWc5JvIQnQkK1C",
+    image:`${BASE_IMG}1`,
     address: {
       street: "Hoeger Mall",
       suite: "Apt. 692",
@@ -78,6 +90,8 @@ module.exports = [
     email: "Lucio_Hettinger@annie.ca",
     roleId: 4,
     status: "inactive",
+    password:"$2a$10$9yTzL3UoZbG/n8Z7uFjDru6/Pv1hlDpDdRJ4X2FlWc5JvIQnQkK1C",
+    image:`${BASE_IMG}1`,
     address: {
       street: "Skiles Walks",
       suite: "Suite 351",
@@ -96,6 +110,8 @@ module.exports = [
     email: "Karley_Dach@jasper.info",
     roleId: 1,
     status: "active",
+    password:"$2a$10$9yTzL3UoZbG/n8Z7uFjDru6/Pv1hlDpDdRJ4X2FlWc5JvIQnQkK1C",
+    image:`${BASE_IMG}1`,
     address: {
       street: "Norberto Crossing",
       suite: "Apt. 950",
@@ -114,6 +130,8 @@ module.exports = [
     email: "Telly.Hoeger@billy.biz",
     roleId: 3,
     status: "inactive",
+    password:"$2a$10$9yTzL3UoZbG/n8Z7uFjDru6/Pv1hlDpDdRJ4X2FlWc5JvIQnQkK1C",
+    image:`${BASE_IMG}1`,
     address: {
       street: "Rex Trail",
       suite: "Suite 280",
@@ -132,6 +150,8 @@ module.exports = [
     email: "Sherwood@rosamond.me",
     roleId: 2,
     status: "active",
+    password:"$2a$10$9yTzL3UoZbG/n8Z7uFjDru6/Pv1hlDpDdRJ4X2FlWc5JvIQnQkK1C",
+    image:`${BASE_IMG}1`,
     address: {
       street: "Ellsworth Summit",
       suite: "Suite 729",
@@ -150,6 +170,8 @@ module.exports = [
     email: "Chaim_McDermott@dana.io",
     roleId: 4,
     status: "inactive",
+    password:"$2a$10$9yTzL3UoZbG/n8Z7uFjDru6/Pv1hlDpDdRJ4X2FlWc5JvIQnQkK1C",
+    image:`${BASE_IMG}1`,
     address: {
       street: "Dayna Park",
       suite: "Suite 449",
@@ -168,6 +190,8 @@ module.exports = [
     email: "Rey.Padberg@karina.biz",
     roleId: 1,
     status: "active",
+    password:"$2a$10$9yTzL3UoZbG/n8Z7uFjDru6/Pv1hlDpDdRJ4X2FlWc5JvIQnQkK1C",
+    image:`${BASE_IMG}1`,
     address: {
       street: "Kattie Turnpike",
       suite: "Suite 198",
