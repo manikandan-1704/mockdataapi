@@ -6,6 +6,10 @@ const PORT = 3000;
 app.use(express.json());
 
 const userRoutes = require('./routes/users');
+const roleRoutes = require('./routes/roles');
+
+// Routes
+app.use('/roles', roleRoutes);
 app.use('/users', userRoutes);
 
 // Basic route
