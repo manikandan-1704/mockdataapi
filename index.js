@@ -1,10 +1,12 @@
 const express = require('express');
+const cors = require('cors');
 const app = express();
-const PORT = 3000;
+const PORT = 7000;
 const path = require('path');
 
 const { logger, getStats } = require('./middleware/logging');
 
+app.use(cors());
 app.use(logger);
 
 app.use('/images', express.static(path.join(__dirname, 'public/images')));
@@ -30,8 +32,12 @@ app.get('/api-stats', (req, res) => {
 
 // Basic route
 app.get('/', (req, res) => {
-  res.send('MockDataAPI is running 🚀');
+  res.json({
+    status: true,
+    message: "Hello, welcome to Mock API 🚀"
+  });
 });
+
 
 // Start server
 app.listen(PORT, () => {
